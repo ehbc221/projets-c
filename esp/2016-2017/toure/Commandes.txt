@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------------
+				INITIATION
+-------------------------------------------------------------------------------
+
+<pwd> => voir le repértoire courant (dossier où l'on se trouve)
+EX: /home/babacar
+
+1) Créer un dossier TP_LC
+	<mkdir TP_LC>
+	- Vérifier si on l'a créer : <ls>
+
+2) Se déplacer dans TP_LC
+	<cd TP_LC>
+
+3) Créer un fichier texte : "monfichier"
+	<touch monfichier>
+
+4) Editer le fichier "monfichier" : Exemples d'éditeurs de texte (parv défaut sous Linux) : "gedit", "nano"
+	<gedit monfichier>
+	<nano monfichier>
+
+5) Y écrire "Bonsoir la classe"
+
+6) Supprimer le fichier "monfichier"
+	<rm monfichier>
+
+-------------------------------------------------------------------------------
+				EXO D'APPLICATION 1
+-------------------------------------------------------------------------------
+
+Créer un fichier C "bonjour.c" qui écrit "Bonjour la classe".
+
+1) Créer le fichier
+	<touch bonjour.c>
+
+2) L'ouvrir avec un éditeur de texte
+	<gedit bonjour.c>
+
+.
+.
+.
+.
+.
+
+3) Compilation
+	<gcc bonjour.c>
+
+4) Exécuter le fichier
+	<./a.out>
+
+-------------------------------------------------------------------------------
+				Compilation(s)
+-------------------------------------------------------------------------------
+
+1) Preprocessing
+	<gcc -E bonjour.c -o bonjour.cpp>
+
+2) Production du code objet
+	<gcc -x cpp-output -c bonjour.cpp -o bonjour.o>
+
+3) Editer les liens
+	<gcc bonjour.o -o bonjour.exe>
+
+4) Execution
+	<./bonjour.exe>
+
+5) Assembleur
+	<gcc -S bonjour.c -o bonjour.s>
+
+-------------------------------------------------------------------------------
+				EXO D'APPLICATION 2
+-------------------------------------------------------------------------------
+
+Ecrire un programme en C "second.c" dans un sous repertoire "second" qui calcule une fonction de type : ax²+bx+c=0 avec a, b et c fournis par l'utilisateur.
+
+
+
